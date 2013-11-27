@@ -1,5 +1,15 @@
+@import url(http://fonts.googleapis.com/css?family=Andika);
+
 $navbar-default-bg: #2980b9;
+$font-family-sans-serif: 'Andika','helvetica Neue', helvectica, Arial, sans-serif;
 $navbar-default-link-color: #ecf0f1;
 $jumbotron-bg: #7f8c8d;
 $jumbotron-color: white;
 @import 'bootstrap';
+
+.center {
+		text-align: center;
+}
+.navbar-brand {
+		font-weight: bold;
+}
