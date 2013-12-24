@@ -3,9 +3,9 @@
 <table>
   <thead>
     <tr>
+      <th>Image</th>
       <th>Description</th>
-      <th>UserId</th>
-      <th>Email</th>
+      <th>User</th>
       <th></th>
       <th></th>
       <th></th>
@@ -20,7 +20,7 @@
         <td><%= pin.user.email if pin.user%></td>
         <td><%= link_to 'Show', pin_path(pin) %></td>
         <% if pin.user == current_user %>
-            <td><%= link_to 'Edit', edit_pin_path(@pin) %></td>
+            <td><%= link_to 'Edit', edit_pin_path(pin) %></td>
             <td><%= link_to 'Destroy', pin, method: :delete, data: { confirm: 'Are you sure?' } %></td>
         <% end %>            
       </tr>
